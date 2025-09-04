@@ -1,0 +1,17 @@
+{
+  "functions": {
+    "api/parse-pdf.py": {
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/parse-pdf",
+      "dest": "/api/parse-pdf.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
