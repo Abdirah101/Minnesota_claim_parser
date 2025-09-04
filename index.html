@@ -308,7 +308,7 @@
                 formData.append('pdf_file', selectedFile);
 
                 // Replace with your actual API endpoint
-                const response = await fetch('/api/parse-pdf', {
+                const response = await fetch('/api/parse', {
                     method: 'POST',
                     body: formData
                 });
